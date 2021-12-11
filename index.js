@@ -7,6 +7,8 @@ api.use(cors({ // Habilita o CORS (Cross Origin Resource Sharing)
     origin: "*"
 }))
 
+const PORT = process.env.PORT || 3001
+
 const personagens = [ // Lista de personagens
     {
         nome: "Homer Simpson",
@@ -31,6 +33,6 @@ api.post("/personagens", (req, res) => {
     res.json({ mensagem: "Personagem salvo com sucesso!" })
 })
 
-api.listen(3001, () => {
-    console.log("API rodando na porta 3000")
+api.listen(PORT, () => {
+    console.log("API rodando na porta " + PORT)
 })

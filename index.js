@@ -7,7 +7,7 @@ api.use(cors({ // Habilita o CORS (Cross Origin Resource Sharing)
     origin: "*"
 }))
 
-const personagens = [
+const personagens = [ // Lista de personagens
     {
         nome: "Homer Simpson",
         imagem: "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/cropped-homersimpson-6807529.jpg"

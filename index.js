@@ -9,7 +9,7 @@ api.use(cors({ // Habilita o CORS (Cross Origin Resource Sharing)
 }))
 
 async function connect() {
-    await mongoose.connect("mongodb+srv://mongodb:jCdknHmVxcNx@cluster0.zwhsu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    await mongoose.connect("mongodb+srv://mongodb:jCdknHmVxcNx@cluster0.zwhsu.mongodb.net/simpsons-codex?retryWrites=true&w=majority")
     console.log("Banco de dados conectado com sucesso")
 }
 
